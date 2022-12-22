@@ -1,7 +1,8 @@
 {-# OPTIONS --cubical #-}
 
 {- This file contains a couple of examples of cofibrations from the Cubical Agda library.
-   More generally, any point constructor of a HIT is a cofibration. -}
+   More generally, any point constructor of a HIT is a cofibration, following Lumsdaine
+   in http://peterlefanulumsdaine.com/research/Lumsdaine-Model-strux-from-HITs.pdf. -}
 
 {- For just this file we will use the Cubical Agda library. -}
 open import Cubical.Core.Everything
@@ -39,7 +40,7 @@ isCof {A = A} {B = B} m {ℓ'' = ℓ''} =
     f = truncElim (λ z → isContr→isOfHLevel (suc n) (CContr z)) h
 
 {- The definition of -2 truncation in the Cubical library does not satisfy the
-   right computation rule to give a fibration, so we define our own version by hand. -}
+   right computation rule to give a cofibration, so we define our own version by hand. -}
 data ∥_∥₋₂ (A : Type ℓ) : Type ℓ where
   ∣_∣₋₂ : A → ∥ A ∥₋₂
   centre : ∥ A ∥₋₂
