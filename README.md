@@ -2,8 +2,8 @@ This is a more general version of Kraus' theorem that we can in a certain weak s
 
 Files are layed out as follows:
 
-`Basics.agda` Some basic propositions in type theory
-`StrictBasics.agda` Some basic propositions for dealing with strict equality in 2 level type theory
-`Cofibrations.agda` Definition of cofibration
-`KrausTheorem.agda` Contains main result
-`CofibrationExamples.agda` A mostly independent file that uses the Cubical Agda library to give a couple of examples of cofibration, including truncation.
+- `Basics.agda` Some basic propositions in type theory
+- `StrictBasics.agda` Some basic propositions for dealing with strict equality in 2 level type theory
+- `Cofibrations.agda` Definition of cofibration
+- `KrausTheorem.agda` Contains main result
+- `CofibrationExamples.agda` A mostly independent file that uses the Cubical Agda library to give a couple of examples of cofibration, including truncation.
