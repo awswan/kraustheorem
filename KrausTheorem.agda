@@ -40,7 +40,8 @@ module StrictifyFactorisation (A : Set ℓ) (B : Set ℓ') (C : Set ℓ'') (m : 
 isTransitive : Set → Set₁
 isTransitive A = (a a' : A) → (A , a) ≡ _,_ {A = Set} {B = λ A → A} A a'
 
-{- We use this to construct the inverse to m. -}
+{- We use this to construct the inverse to m following exactly the same argument
+   as in section 8.4 of https://doi.org/10.23638/LMCS-13(1:15)2017. -}
 module Invert (A B : Set) (m : A → B) (mCof : isCof m) -- let m be a cofibration
   (a₀ : A) (Atrans : isTransitive A) -- and let A be transitivex
   where
